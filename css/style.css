@@ -1,0 +1,23 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+html{
+    font-family: Maven Pro;
+    font-size: 20px;
+    margin: 20px;
+}
+
+/* main section */
+.main{
+    text-align: center;
+}
+
+.title{
+    font-size: 1.25rem;
+    padding: 10px;
+}
+
+.photos{
+    margin: 1.5em 0 0 0;
+    font-size: 1rem;
+}

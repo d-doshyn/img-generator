@@ -1,0 +1,21 @@
+@media screen and (min-width: 768px){
+    /* main section */
+    .photos{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .photos img{
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    html{
+        font-size: 24px;
+    }
+
+    .photos img{
+        width: 300px;
+    }
+}
