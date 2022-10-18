@@ -9,6 +9,9 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- styles -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
@@ -16,7 +19,7 @@
 
     <!-- js -->
 
-    <title>Random image generator for cool boys</title>
+    <title>Random image generator by Lorem Picsum & DummyImage</title>
 </head>
 
 <body>
@@ -26,13 +29,23 @@
             <h1>Random Image Generator</h1>
         </div>
         <div class="photos">
-            <div class="unsplash-photo">
-                <h2>Unsplash</h2>
-                <img src='http://unsplash.it/200?random&gravity=center' alt=''/>
+            <div class="photo">
+                <figure class="photo-icon">
+                    <i class="fa-solid fa-image"></i>
+                </figure>
+                <h3 class="card-title">Random image by Lorem Picsum</h3>
             </div>
-            <div class="placeholder-photo">
-                <h2>DummyImage</h2>
-                <img src='https://dummyimage.com/200/880808.png?text=DummyImage'' alt=''/>
+            <div class="photo">
+                <figure class="photo-icon">
+                    <i class="fa-solid fa-square-h"></i>
+                </figure>
+                <h3 class="card-title">Random image by DummyImage</h3>
+            </div>
+            <div class="photo">
+                <figure class="photo-icon">
+                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                </figure>
+                <h3 class="card-title">Donations</h3>
             </div>
         </div>
     </section>
@@ -46,30 +59,30 @@
             <div class="footer__icons">
                 <!-- instagram -->
                 <div class="icon-text__container">
-                    <img src="./img/instagram.png" alt="" class="icon">
-                    <a href="#" target="_blank" class="footer-link">
-                        <h3 class="icon-text">Fllow us on instagram</h3>
+                    <i class="fa-brands fa-instagram icon"></i>
+                    <a href="#" class="footer-link">
+                        <h3 class="icon-text">Follow us on instagram</h3>
                     </a>
                 </div>
                 <!-- telegram -->
                 <div class="icon-text__container">
-                    <img src="./img/telegram.png" alt="" class="icon">
-                    <a href="#" target="_blank" class="footer-link">
-                        <h3 class="icon-text">Fllow us on telegram</h3>
+                    <i class="fa-brands fa-telegram icon"></i>
+                    <a href="#" class="footer-link">
+                        <h3 class="icon-text">Follow us on telegram</h3>
                     </a>
                 </div>
                 <!-- feedback -->
                 <div class="icon-text__container">
-                    <img src="./img/feedback.png" alt="" class="icon">
-                    <a href="#" target="_blank" class="footer-link">
-                        <h3 class="icon-text">We'll be glad to see your comments and complains</h3>
+                    <i class="fa-solid fa-comments icon"></i>
+                    <a href="#" class="footer-link">
+                        <h3 class="icon-text">Complain us how awful is this</h3>
                     </a>
                 </div>
             </div>
             <div class="line"></div>
             <div class="footer-additionalText__container">
                 <p class="footer-additionalText">Made by <b>Super cool Daniil</b>, <b>Insanely cool Nazar</b>,
-                    <b>Unbelievebely cool Serhio</b>.<br><span class="rights">All rights reserved.</span></p>
+                    <b>Unbelievebely cool Serhio</b>.<br><span class="rights">&copy; All rights reserved.</span></p>
             </div>
         </div>
     </footer>

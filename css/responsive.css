@@ -1,21 +1,56 @@
-@media screen and (min-width: 768px){
-    /* main section */
+@media screen and (min-width: 768px) {
+    /* main */
     .photos{
-        display: flex;
-        justify-content: space-around;
+        flex-direction: row;
     }
 
-    .photos img{
-        width: 250px;
+    .photo i{
+        font-size: 50px;
+    }
+
+    .card-title{
+        font-size: 20px;
+    }
+
+    .title h1{
+        font-size: 40px;
+    }
+
+    .main{
+        margin-top: 60px;
+    }
+
+    .photo:hover{
+        transform: translateY(-30px);
     }
 }
 
 @media screen and (min-width: 1440px) {
-    html{
-        font-size: 24px;
+    /* main */
+    .title h1{
+        font-size: 70px;
     }
 
-    .photos img{
-        width: 300px;
+    .main{
+        margin-top: 120px;
+        margin-bottom: 200px;
+    }
+
+    .photos{
+        margin-top: 40px;
+    }
+
+    .card-title{
+        font-size: 30px;
+    }
+
+    .photo {
+        width: 350px;
+        height: 250px;
+        padding: 20px;
+    }
+
+    .photo i{
+        font-size: 80px;
     }
 }
