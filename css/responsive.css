@@ -23,6 +23,27 @@
     .photo:hover{
         transform: translateY(-30px);
     }
+
+    .footer__header-container {
+        font-size: 15px;
+    }
+
+    .icon {
+        font-size: 30px;
+    }
+
+    .icon-text {
+        margin-left: 10px;
+        font-size: 15px;
+    }
+
+    .footer-additionalText__container {
+        font-size: 15px;
+    }
+
+    .rights {
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -52,5 +73,31 @@
 
     .photo i{
         font-size: 80px;
+    }
+
+    .footer__container {
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .footer__header-container {
+        font-size: 25px;
+    }
+
+    .icon {
+        font-size: 45px;
+    }
+
+    .icon-text {
+        margin-left: 20px;
+        font-size: 25px;
+    }
+
+    .footer-additionalText__container {
+        font-size: 25px;
+    }
+
+    .rights {
+        font-size: 25px;
     }
 }
