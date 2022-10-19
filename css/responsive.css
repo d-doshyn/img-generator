@@ -20,8 +20,17 @@
         margin-top: 60px;
     }
 
+    .photo{
+        width: 200px;
+    }
+
     .photo:hover{
         transform: translateY(-30px);
+    }
+
+    /* footer */
+    .footer__container {
+        padding: 20px;
     }
 
     .footer__header-container {
@@ -75,8 +84,10 @@
         font-size: 80px;
     }
 
+    /* footer */
+
     .footer__container {
-        padding: 20px;
+        padding: 40px 100px;
         gap: 10px;
     }
 
