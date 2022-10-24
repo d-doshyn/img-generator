@@ -272,3 +272,12 @@ input.param-placeholder[type="text"]{
 .picsum-modal-container, .dummy-modal-container{
     display: none;
 }
+
+.modal-closer{
+    position: absolute;
+    font-size: 25px;
+    top: 0;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+}

@@ -92,6 +92,10 @@
     .dummy-modal-container .param-text{
         display: block;
     }
+
+    .modal-closer{
+        font-size: 30px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -176,5 +180,11 @@
 
     .fields{
         padding: 10px 20px;
+    }
+
+    .modal-closer{
+        font-size: 50px;
+        top: 5px;
+        right: 20px;
     }
 }

@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/responsive.css">
 
     <!-- js -->
+    <script src="js/imageModalOpener.js" defer></script>
 
     <title>Random image generator by Lorem Picsum & DummyImage</title>
 </head>
@@ -31,13 +32,13 @@
             <h1>Random Image Generator</h1>
         </div>
         <div class="photos">
-            <div class="photo">
+            <div class="photo open-picsum">
                 <figure class="photo-icon">
                     <i class="fa-solid fa-image"></i>
                 </figure>
                 <h3 class="card-title">Random image by Lorem Picsum</h3>
             </div>
-            <div class="photo">
+            <div class="photo open-dummy">
                 <figure class="photo-icon">
                     <i class="fa-solid fa-square-h"></i>
                 </figure>
@@ -54,6 +55,7 @@
 
     <!-- lorem picsum modal -->
     <section class="modal-picture-container picsum-modal-container">
+        <div class="modal-closer close-picsum">&times;</div>
         <div class="modal-picture">
             <div class="fields modal-block">
                 <div class="img-param">
@@ -97,6 +99,7 @@
 
     <!-- dummyimage modal -->
     <section class="modal-picture-container dummy-modal-container">
+        <div class="modal-closer close-dummy">&times;</div>
         <div class="modal-picture">
             <div class="fields modal-block">
                 <div class="img-param">
@@ -143,7 +146,7 @@
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__header-container">
-                <h2 class="footer__header">Random image generator by DummyImage & Lorem Picsum</h2>
+                <h2 class="footer__header">Random image generator by DummyImage &amp; Lorem Picsum</h2>
             </div>
             <div class="footer__icons">
                 <!-- instagram -->
