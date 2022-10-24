@@ -184,7 +184,7 @@ a .dark-text:hover {
 }
 
 /* modals with pictures */
-.modal-picture-container{
+.modal-picture-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -197,7 +197,7 @@ a .dark-text:hover {
     align-items: center;
 }
 
-.modal-picture{
+.modal-picture {
     width: 85%;
     height: 85%;
     background-color: #fff;
@@ -209,11 +209,11 @@ a .dark-text:hover {
     border: #555 3px dashed;
 }
 
-.modal-block{
+.modal-block {
     border: #555 2px solid;
 }
 
-.image-modal{
+.image-modal {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,20 +223,20 @@ a .dark-text:hover {
     background-repeat: no-repeat;
 }
 
-.lorem-picsum{
+.lorem-picsum {
     background-image: url(https://picsum.photos/200/300.jpg);
 }
 
-.dummy-image{
+.dummy-image {
     background-image: url(https://dummyimage.com/200x300/000/fff.png?text=Text);
 }
 
-.link-to-copy{
+.link-to-copy {
     display: none;
     position: relative;
 }
 
-.fields{
+.fields {
     padding: 5px 10px;
     display: flex;
     flex-direction: column;
@@ -246,24 +246,24 @@ a .dark-text:hover {
     position: relative;
 }
 
-.param-text{
+.param-text {
     font-size: 16px;
 }
 
-input.param-placeholder[type="text"]{
+input.param-placeholder[type="text"] {
     width: 140px;
     font-size: 16px;
     padding-left: 5px;
 }
 
-.param-placeholder{
+.param-placeholder {
     height: 20px;
     outline: none;
     border: #888 2px solid;
     border-radius: 5px;
 }
 
-.save-picture{
+.save-picture {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -283,11 +283,11 @@ input.param-placeholder[type="text"]{
     transition: 0.3s;
 }
 
-.save-picture:hover{
+.save-picture:hover {
     opacity: 0.7;
 }
 
-.copy-clipboard{
+.copy-clipboard {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -305,25 +305,35 @@ input.param-placeholder[type="text"]{
     color: #555;
 }
 
-.copy-clipboard:hover{
+.copy-clipboard:hover {
     background-color: #888;
     color: #fff;
     border-color: #888;
 }
 
-.dummy-modal-container .param-text{
+.dummy-modal-container .param-text {
     display: none;
 }
 
-.picsum-modal-container, .dummy-modal-container{
+.picsum-modal-container,
+.dummy-modal-container {
     display: none;
 }
 
-.modal-closer{
+.modal-closer {
     position: absolute;
     font-size: 25px;
     top: 0;
     right: 10px;
     color: #fff;
     cursor: pointer;
+}
+
+.DummyImage-link,
+.LoremPicsum-link {
+    text-decoration: underline;
+}
+
+a.dark-text {
+    color: rgb(206, 206, 206);
 }
