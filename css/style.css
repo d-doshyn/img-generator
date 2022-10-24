@@ -6,6 +6,7 @@ html {
 }
 
 body {
+    transition: 0.3s;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -93,6 +94,7 @@ body {
 }
 
 .icon {
+    transition: 0.3s;
     font-size: 18px;
     color: #555;
 }
@@ -131,4 +133,48 @@ a:visited {
 
 .icon-text:hover {
     color: rgb(143, 143, 143);
+}
+
+.theme {
+    width: fit-content;
+    padding: 5px;
+    font-size: 24px;
+    transition: 0.3s;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.theme-button {
+    background-color: rgba(255, 0, 0, 0);
+    border: none;
+}
+
+.theme-label {
+    transition: 0.3s;
+    font-size: 30px;
+}
+
+.theme-label:hover {
+    color: rgb(143, 143, 143);
+}
+
+.dark-background {
+    background-color: #555;
+}
+
+.dark-text {
+    color: rgb(206, 206, 206);
+}
+
+i.dark-icon {
+    color: rgb(206, 206, 206);
+}
+
+button .dark-text:hover {
+    color: rgb(255, 255, 255);
+}
+
+a .dark-text:hover {
+    color: rgb(58, 57, 57);
 }
