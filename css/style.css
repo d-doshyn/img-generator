@@ -131,6 +131,10 @@ a:visited {
     text-decoration: none;
 }
 
+.icon-text {
+    transition: .3s;
+}
+
 .icon-text:hover {
     color: rgb(143, 143, 143);
 }
@@ -176,5 +180,150 @@ button .dark-text:hover {
 }
 
 a .dark-text:hover {
-    color: rgb(58, 57, 57);
+    color: #555;
+}
+
+/* modals with pictures */
+.modal-picture-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-picture{
+    width: 85%;
+    height: 85%;
+    background-color: #fff;
+    z-index: 4;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    gap: 5px;
+    padding: 10px;
+    border: #555 3px dashed;
+}
+
+.modal-block{
+    border: #555 2px solid;
+}
+
+.image-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-position: center;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+}
+
+.lorem-picsum{
+    background-image: url(https://picsum.photos/200/300.jpg);
+}
+
+.dummy-image{
+    background-image: url(https://dummyimage.com/200x300/000/fff.png?text=Text);
+}
+
+.link-to-copy{
+    display: none;
+    position: relative;
+}
+
+.fields{
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5px;
+    position: relative;
+}
+
+.param-text{
+    font-size: 16px;
+}
+
+input.param-placeholder[type="text"]{
+    width: 140px;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.param-placeholder{
+    height: 20px;
+    outline: none;
+    border: #888 2px solid;
+    border-radius: 5px;
+}
+
+.save-picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 30px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.save-picture:hover{
+    opacity: 0.7;
+}
+
+.copy-clipboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #fff;
+    transition: 0.3s;
+    border-radius: 5px;
+    cursor: pointer;
+    border: #555 solid 2px;
+    color: #555;
+}
+
+.copy-clipboard:hover{
+    background-color: #888;
+    color: #fff;
+    border-color: #888;
+}
+
+.dummy-modal-container .param-text{
+    display: none;
+}
+
+.picsum-modal-container, .dummy-modal-container{
+    display: none;
+}
+
+.modal-closer{
+    position: absolute;
+    font-size: 25px;
+    top: 0;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
 }
