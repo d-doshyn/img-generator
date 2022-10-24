@@ -52,6 +52,93 @@
         </div>
     </section>
 
+    <!-- lorem picsum modal -->
+    <section class="modal-picture-container picsum-modal-container">
+        <div class="modal-picture">
+            <div class="fields modal-block">
+                <div class="img-param">
+                    <h5 class="param-text">Width(px):</h5>
+                    <input type="text" class="param-placeholder" placeholder="200">
+                </div>
+                <div class="img-param">
+                    <h5 class="param-text">Height(px):</h5>
+                    <input type="text" class="param-placeholder" placeholder="300">
+                </div>
+                <div class="img-param">
+                    <h5 class="param-text">Grayscale:</h5>
+                    <select class="param-placeholder">
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                    </select>
+                </div>
+                <div class="img-param">
+                    <h5 class="param-text">Blur(0 to 10):</h5>
+                    <input class="param-placeholder progress-input" type="range" max="10" value="6"></input>
+                </div>
+                <div class="img-param">
+                    <h5 class="param-text">Format:</h5>
+                    <select class="param-placeholder">
+                        <option value=".jpg">.jpg</option>
+                        <option value=".png">.png</option>
+                        <option value=".webp">.webp</option>
+                    </select>
+                    <button class="save-picture">Save</button>
+                </div>
+            </div>
+            <div class="image-modal lorem-picsum modal-block"></div>
+            <div class="link-to-copy modal-block">
+                <p>https://picsum.photos/200/300</p>
+                <button class="copy-clipboard">
+                    <i class="fa-regular fa-copy"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- dummyimage modal -->
+    <section class="modal-picture-container dummy-modal-container">
+        <div class="modal-picture">
+            <div class="fields modal-block">
+                <div class="img-param">
+                    <h5 class="param-text">Width(px):</h5>
+                    <input type="text" class="param-placeholder width-dummy" placeholder="Width(px)">
+                </div>
+                <div class="img-param">
+                    <h5 class="param-text">Height(px):</h5>
+                    <input type="text" class="param-placeholder height-dummy" placeholder="Height(px)">
+                </div>
+                <div class="img-param">
+                    <h5 class="param-text">Bg color(hex):</h5>
+                    <input type="text" class="param-placeholder bgclr-dummy" placeholder="Bg color(hex)">
+                </div>
+                <div class="img-param">
+                    <h5 class="param-text">Text color(hex):</h5>
+                    <input type="text" class="param-placeholder textclr-dummy" placeholder="Text color(hex)">
+                </div>
+                <div class="img-param">
+                    <h5 class="param-text">Image text:</h5>
+                    <input type="text" class="param-placeholder text-dummy" placeholder="Text">
+                </div>
+                <div class="img-param">
+                    <h5 class="param-text">Format:</h5>
+                    <select class="param-placeholder">
+                        <option value=".jpg">.jpg</option>
+                        <option value=".png">.png</option>
+                        <option value=".webp">.gif</option>
+                    </select>
+                    <button class="save-picture">Save</button>
+                </div>
+            </div>
+            <div class="image-modal dummy-image modal-block"></div>
+            <div class="link-to-copy modal-block">
+                <p>https://picsum.photos/200/300</p>
+                <button class="copy-clipboard">
+                    <i class="fa-regular fa-copy"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
     <!-- footer -->
     <footer class="footer">
         <div class="footer__container">
