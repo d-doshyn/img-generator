@@ -6,6 +6,7 @@ html {
 }
 
 body {
+    transition: 0.3s;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -121,6 +122,7 @@ body {
 }
 
 .icon {
+    transition: 0.3s;
     font-size: 18px;
     color: #555;
 }
@@ -162,11 +164,56 @@ a:visited {
 }
 
 .icon-text:hover {
-    color: #555;
+    color: rgb(143, 143, 143);
+}
+
+.theme {
+    width: fit-content;
+    padding: 5px;
+    font-size: 24px;
+    transition: 0.3s;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.theme-button {
+    background-color: rgba(255, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.theme-label {
+    transition: 0.3s;
+    font-size: 30px;
+}
+
+.theme-label:hover {
+    color: rgb(143, 143, 143);
+}
+
+.dark-background {
+    background-color: #555;
+}
+
+.dark-text {
+    color: #fff;
+}
+
+i.dark-icon {
+    color: #fff;
+}
+
+button .dark-text:hover {
+    color: rgb(255, 255, 255);
+}
+
+a .dark-text:hover {
+    color: rgb(143, 143, 143);
 }
 
 /* modals with pictures */
-.modal-picture-container{
+.modal-picture-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -179,7 +226,7 @@ a:visited {
     align-items: center;
 }
 
-.modal-picture{
+.modal-picture {
     width: 85%;
     height: 85%;
     background-color: #fff;
@@ -188,14 +235,14 @@ a:visited {
     grid-template-rows: 50% 50%;
     gap: 5px;
     padding: 10px;
-    border: #555 3px dashed;
+    border: #555 3px solid;
 }
 
-.modal-block{
+.modal-block {
     border: #555 2px solid;
 }
 
-.image-modal{
+.image-modal {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,20 +252,20 @@ a:visited {
     background-repeat: no-repeat;
 }
 
-.lorem-picsum{
+.lorem-picsum {
     background-image: url(https://picsum.photos/200/300.jpg);
 }
 
-.dummy-image{
+.dummy-image {
     background-image: url(https://dummyimage.com/200x300/000/fff.png?text=Text);
 }
 
-.link-to-copy{
+.link-to-copy {
     display: none;
     position: relative;
 }
 
-.fields{
+.fields {
     padding: 5px 10px;
     display: flex;
     flex-direction: column;
@@ -228,24 +275,24 @@ a:visited {
     position: relative;
 }
 
-.param-text{
+.param-text {
     font-size: 16px;
 }
 
-input.param-placeholder[type="text"]{
+input.param-placeholder[type="text"] {
     width: 140px;
     font-size: 16px;
     padding-left: 5px;
 }
 
-.param-placeholder{
+.param-placeholder {
     height: 20px;
     outline: none;
     border: #888 2px solid;
     border-radius: 5px;
 }
 
-.save-picture{
+.save-picture {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -265,11 +312,11 @@ input.param-placeholder[type="text"]{
     transition: 0.3s;
 }
 
-.save-picture:hover{
+.save-picture:hover {
     opacity: 0.7;
 }
 
-.copy-clipboard{
+.copy-clipboard {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,25 +334,44 @@ input.param-placeholder[type="text"]{
     color: #555;
 }
 
-.copy-clipboard:hover{
+.copy-clipboard:hover {
     background-color: #888;
     color: #fff;
     border-color: #888;
 }
 
-.dummy-modal-container .param-text{
+.dummy-modal-container .param-text {
     display: none;
 }
 
-.picsum-modal-container, .dummy-modal-container{
+.picsum-modal-container,
+.dummy-modal-container {
     display: none;
 }
 
-.modal-closer{
+.modal-closer {
     position: absolute;
     font-size: 25px;
     top: 0;
     right: 10px;
     color: #fff;
     cursor: pointer;
+}
+
+.DummyImage-link,
+.LoremPicsum-link {
+    text-decoration: underline;
+}
+
+a.dark-text {
+    color: rgb(206, 206, 206);
+}
+
+/* helper classes */
+.none{
+    display: none;
+}
+
+.flex{
+    display: flex;
 }

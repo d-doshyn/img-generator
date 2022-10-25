@@ -22,10 +22,17 @@
     <!-- js -->
     <script src="js/imageModalOpener.js" defer></script>
 
+
     <title>Random image generator by Lorem Picsum & DummyImage</title>
 </head>
 
 <body>
+    <!-- theme -->
+    <div class="theme">
+        <button class="theme-button">
+            <i class="fa-solid fa-circle-half-stroke theme-label"></i>
+        </button>
+    </div>
     <!-- main section -->
     <section class="main">
         <div class="title">
@@ -68,7 +75,7 @@
 
 
     <!-- lorem picsum modal -->
-    <section class="modal-picture-container picsum-modal-container">
+    <section class="modal-picture-container picsum-modal-container none">
         <div class="modal-closer close-picsum">&times;</div>
         <div class="modal-picture">
             <div class="fields modal-block">
@@ -112,7 +119,7 @@
     </section>
 
     <!-- dummyimage modal -->
-    <section class="modal-picture-container dummy-modal-container">
+    <section class="modal-picture-container dummy-modal-container none">
         <div class="modal-closer close-dummy">&times;</div>
         <div class="modal-picture">
             <div class="fields modal-block">
@@ -126,11 +133,11 @@
                 </div>
                 <div class="img-param">
                     <h5 class="param-text">Bg color(hex):</h5>
-                    <input type="text" class="param-placeholder bgclr-dummy" placeholder="Bg color(hex)">
+                    <input type="color" class="param-placeholder bgclr-dummy" placeholder="Bg color(hex)">
                 </div>
                 <div class="img-param">
                     <h5 class="param-text">Text color(hex):</h5>
-                    <input type="text" class="param-placeholder textclr-dummy" placeholder="Text color(hex)">
+                    <input type="color" class="param-placeholder textclr-dummy" placeholder="Text color(hex)">
                 </div>
                 <div class="img-param">
                     <h5 class="param-text">Image text:</h5>
@@ -160,7 +167,9 @@
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__header-container">
-                <h2 class="footer__header">Random image generator by DummyImage &amp; Lorem Picsum</h2>
+                <h2 class="footer__header">Random image generator by <a href="https://dummyimage.com/" target="_blank"
+                        class="DummyImage-link">DummyImage</a> &amp; <a href="https://picsum.photos/" target="_blank"
+                        class="LoremPicsum-link">Lorem Picsum</a></h2>
             </div>
             <div class="footer__icons">
                 <!-- instagram -->
@@ -180,7 +189,7 @@
                 <!-- feedback -->
                 <div class="icon-text__container">
                     <i class="fa-solid fa-comments icon"></i>
-                    <a href="#" class="footer-link">
+                    <a href="malito:sergiiyoung@gmail.com" class="footer-link">
                         <h3 class="icon-text">Complain us how awful is this</h3>
                     </a>
                 </div>
@@ -193,7 +202,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="./js/black-theme.js"></script>
 </body>
 
 </html>
