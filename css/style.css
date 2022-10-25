@@ -316,6 +316,10 @@ input.param-placeholder[type="text"] {
     display: none;
 }
 
+.param-text.color-param{
+    display: block;
+}
+
 .picsum-modal-container,
 .dummy-modal-container {
     display: none;
@@ -336,7 +340,7 @@ input.param-placeholder[type="text"] {
 }
 
 a.dark-text {
-    color: rgb(206, 206, 206);
+    color: #fff;
 }
 
 /* helper classes */
