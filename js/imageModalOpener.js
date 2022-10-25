@@ -11,29 +11,24 @@ let closePicsum = document.querySelector(".modal-closer.close-picsum");
 let closeDummy = document.querySelector(".modal-closer.close-dummy");
 
 // functions
-function appear(elem) {
-    elem.classList.add("flex");
-    elem.classList.remove("none");
-}
-
-function disappear(elem){
-    elem.classList.add("none");
-    elem.classList.remove("flex");
+function appear(elem, class1, class2) {
+    elem.classList.add(class1);
+    elem.classList.remove(class2);
 }
 
 // appearing and disappearing modal
 picsumOpener.onclick = () => {
-    appear(picsumModal);
+    appear(picsumModal, "flex", "none");
 }
 
 closePicsum.onclick = () => {
-    disappear(picsumModal);
+    appear(picsumModal, "none", "flex");
 }
 
 dummyOpener.onclick = () => {
-    appear(dummyModal);
+    appear(dummyModal, "flex", "none");
 }
 
 closeDummy.onclick = () => {
-    disappear(dummyModal);
+    appear(dummyModal, "none", "flex");
 }
