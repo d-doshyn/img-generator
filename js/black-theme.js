@@ -1,6 +1,6 @@
 let button = document.querySelector('.theme-button')
 let body = document.querySelector('body')
-let darkText = document.querySelectorAll('.theme-label, .title, .card-title, .footer__header, .icon-text, .footer-additionalText')
+let darkText = document.querySelectorAll('.theme-label, .title, .card-title, .footer__header, .icon-text, .footer-additionalText, .DummyImage-link, .LoremPicsum-link')
 let pictureIcon = document.querySelectorAll('i.fa-solid, i.fa-brands, i.fa-image, i.fa-square-h, i.fa-circle-dollar-to-slot, i.fa-instagram, i.fa-telegram, i.fa-comments')
 
 
