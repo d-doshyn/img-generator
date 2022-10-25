@@ -169,11 +169,11 @@ a:visited {
 }
 
 .dark-text {
-    color: rgb(206, 206, 206);
+    color: #fff;
 }
 
 i.dark-icon {
-    color: rgb(206, 206, 206);
+    color: #fff;
 }
 
 button .dark-text:hover {
