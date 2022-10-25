@@ -10,18 +10,30 @@ let dummyModal = document.querySelector(".modal-picture-container.dummy-modal-co
 let closePicsum = document.querySelector(".modal-closer.close-picsum");
 let closeDummy = document.querySelector(".modal-closer.close-dummy");
 
+// functions
+function appear(elem) {
+    elem.classList.add("flex");
+    elem.classList.remove("none");
+}
+
+function disappear(elem){
+    elem.classList.add("none");
+    elem.classList.remove("flex");
+}
+
+// appearing and disappearing modal
 picsumOpener.onclick = () => {
-    picsumModal.style.display = "flex";
+    appear(picsumModal);
 }
 
 closePicsum.onclick = () => {
-    picsumModal.style.display = "none";
+    disappear(picsumModal);
 }
 
 dummyOpener.onclick = () => {
-    dummyModal.style.display = "flex";
+    appear(dummyModal);
 }
 
 closeDummy.onclick = () => {
-    dummyModal.style.display = "none";
+    disappear(dummyModal);
 }

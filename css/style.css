@@ -338,3 +338,12 @@ input.param-placeholder[type="text"] {
 a.dark-text {
     color: rgb(206, 206, 206);
 }
+
+/* helper classes */
+.none{
+    display: none;
+}
+
+.flex{
+    display: flex;
+}
