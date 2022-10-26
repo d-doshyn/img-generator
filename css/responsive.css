@@ -98,6 +98,11 @@
     .modal-closer{
         font-size: 30px;
     }
+
+    /* donation modal */
+    .modal-donations-body{
+        font-size: 18px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -188,5 +193,10 @@
         font-size: 50px;
         top: 5px;
         right: 20px;
+    }
+
+    /* donation modal */
+    .modal-donations-body{
+        font-size: 20px;
     }
 }
