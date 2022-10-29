@@ -188,10 +188,6 @@ a:visited {
     font-size: 30px;
 }
 
-.theme-label:hover {
-    color: rgb(143, 143, 143);
-}
-
 .dark-background {
     background-color: #555;
 }
@@ -369,6 +365,10 @@ input.param-placeholder[type="text"] {
 
 a.dark-text {
     color: #fff;
+}
+
+input[type="range"]{
+    padding: 0 !important;
 }
 
 /* helper classes */
