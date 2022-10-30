@@ -7,6 +7,25 @@ let dummyInputs = {
     dummyFormat: document.querySelector(".format-dummy"),
 }
 
-let dummyImage = document.querySelector(".dummy-image").style.backgroundImage;
+let dummyImage = document.querySelector(".dummy-image");
 
-console.log(dummyImage)
+// src generating
+function generateSrc() {
+    dummyImage.style.backgroundImage = "url" + "(" + "https://dummyimage.com/" + dummyInputs.dummyWidth.value + "x" + dummyInputs.dummyHeight.value + "/" + dummyInputs.dummyBgColor.value.replace(/#/, '') + "/" + dummyInputs.dummyTextColor.value.replace(/#/, '') + dummyInputs.dummyFormat.value + "?text=" + dummyInputs.dummyText.value.replace(/ /g, '+') + ")";
+    
+    if (dummyInputs.dummyText.value == "") {
+        dummyImage.style.backgroundImage = "url" + "(" + "https://dummyimage.com/" + dummyInputs.dummyWidth.value + "x" + dummyInputs.dummyHeight.value + "/" + dummyInputs.dummyBgColor.value.replace(/#/, '') + "/" + dummyInputs.dummyTextColor.value.replace(/#/, '') + dummyInputs.dummyFormat.value + ")";
+    }
+    
+    // text field
+    let dummyTextField = document.querySelector(".dummy-text-block p");
+    let bg = dummyImage.style.backgroundImage.slice(5, -2);
+    dummyTextField.innerText = bg;
+}
+
+// animated image
+for (let input in dummyInputs) {
+    dummyInputs[input].oninput = () => {
+        generateSrc();
+    }
+}

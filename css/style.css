@@ -252,9 +252,9 @@ a .dark-text:hover {
     background-image: url(https://picsum.photos/200/300.jpg);
 }
 
-.dummy-image {
+/* .dummy-image {
     background-image: url(https://dummyimage.com/200x300/000/fff.png?text=Text);
-}
+} */
 
 .link-to-copy {
     display: none;
