@@ -371,6 +371,10 @@ input[type="range"]{
     padding: 0 !important;
 }
 
+.copy-clipboard:active {
+    background-color: rgb(17, 17, 17);
+}
+
 /* helper classes */
 .none{
     display: none;

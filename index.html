@@ -23,6 +23,7 @@
     <script src="js/imageModalOpener.js" defer></script>
     <script src="./js/black-theme.js" defer></script>
     <script src="js/dummyGenerator.js" defer></script>
+    <script src="js/copyLink.js" defer></script>
 
     <title>Random image generator by Lorem Picsum & DummyImage</title>
 </head>
@@ -97,8 +98,8 @@
             </div>
             <div class="image-modal lorem-picsum modal-block"></div>
             <div class="link-to-copy modal-block">
-                <p>https://picsum.photos/200/300</p>
-                <button class="copy-clipboard">
+                <p class="picsum-link">https://picsum.photos/200/300</p>
+                <button class="copy-clipboard copyButton-picsum">
                     <i class="fa-regular fa-copy"></i>
                 </button>
             </div>
@@ -140,10 +141,11 @@
                     <button class="save-picture">Save</button>
                 </div>
             </div>
-            <div class="image-modal dummy-image modal-block" style="background-image: url(https://dummyimage.com/200x300/000000/ffffff.png?text=Text)"></div>
+            <div class="image-modal dummy-image modal-block"
+                style="background-image: url(https://dummyimage.com/200x300/000000/ffffff.png?text=Text)"></div>
             <div class="link-to-copy modal-block dummy-text-block">
-                <p>https://dummyimage.com/200x300/000000/ffffff.png?text=Text</p>
-                <button class="copy-clipboard">
+                <p class="dummyimage-link">https://dummyimage.com/200x300/000000/ffffff.png?text=Text</p>
+                <button class="copy-clipboard copyButton-dummy">
                     <i class="fa-regular fa-copy"></i>
                 </button>
             </div>
@@ -155,7 +157,8 @@
         <div class="modal-closer close-donations">&times;</div>
         <div class="modal-donations-body">
             <div class="modal-head">
-                <p>We are poor african children and we have nothing to eat. Please don't be stupid mazafaka and give us some money little piece of shit</p>
+                <p>We are poor african children and we have nothing to eat. Please don't be stupid mazafaka and give us
+                    some money little piece of shit</p>
             </div>
             <!-- <div class="modal-inputs">
                 <input type="text" class="modal-card-number" placeholder="Card Number">
