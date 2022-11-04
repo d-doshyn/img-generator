@@ -23,6 +23,7 @@
     <script src="js/imageModalOpener.js" defer></script>
     <script src="./js/black-theme.js" defer></script>
     <script src="js/dummyGenerator.js" defer></script>
+    <script src="js/picsumGenerator.js" defer></script>
     <script src="js/copyLink.js" defer></script>
 
     <title>Random image generator by Lorem Picsum & DummyImage</title>
@@ -69,26 +70,26 @@
             <div class="fields modal-block">
                 <div class="img-param">
                     <h5 class="param-text">Width(px):</h5>
-                    <input type="text" class="param-placeholder" value="200">
+                    <input type="text" class="param-placeholder picsum-width" value="200">
                 </div>
                 <div class="img-param">
                     <h5 class="param-text">Height(px):</h5>
-                    <input type="text" class="param-placeholder" value="300">
+                    <input type="text" class="param-placeholder picsum-height" value="300">
                 </div>
                 <div class="img-param">
                     <h5 class="param-text">Grayscale:</h5>
-                    <select class="param-placeholder">
+                    <select class="param-placeholder picsum-grayscale">
                         <option value="No">No</option>
                         <option value="Yes">Yes</option>
                     </select>
                 </div>
                 <div class="img-param">
                     <h5 class="param-text">Blur(0 to 10):</h5>
-                    <input class="param-placeholder progress-input" type="range" max="10" value="6"></input>
+                    <input class="param-placeholder progress-input picsum-blur" type="range" max="10" value="6"></input>
                 </div>
                 <div class="img-param">
                     <h5 class="param-text">Format:</h5>
-                    <select class="param-placeholder">
+                    <select class="param-placeholder picsum-format">
                         <option value=".jpg">.jpg</option>
                         <option value=".png">.png</option>
                         <option value=".webp">.webp</option>
@@ -96,7 +97,7 @@
                     <button class="save-picture">Save</button>
                 </div>
             </div>
-            <div class="image-modal lorem-picsum modal-block"></div>
+            <div class="image-modal lorem-picsum modal-block" style="background-image: url(https://picsum.photos/200/300.jpg)"></div>
             <div class="link-to-copy modal-block">
                 <p class="picsum-link">https://picsum.photos/200/300</p>
                 <button class="copy-clipboard copyButton-picsum">
