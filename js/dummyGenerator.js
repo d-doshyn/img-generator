@@ -11,10 +11,12 @@ let dummyImage = document.querySelector(".dummy-image");
 
 // src generating
 function generateSrc() {
-    dummyImage.style.backgroundImage = "url" + "(" + "https://dummyimage.com/" + dummyInputs.dummyWidth.value + "x" + dummyInputs.dummyHeight.value + "/" + dummyInputs.dummyBgColor.value.replace(/#/, '') + "/" + dummyInputs.dummyTextColor.value.replace(/#/, '') + dummyInputs.dummyFormat.value + "?text=" + dummyInputs.dummyText.value.replace(/ /g, '+') + ")";
+    let myDummyImage = "url" + "(" + "https://dummyimage.com/" + dummyInputs.dummyWidth.value + "x" + dummyInputs.dummyHeight.value + "/" + dummyInputs.dummyBgColor.value.replace(/#/, '') + "/" + dummyInputs.dummyTextColor.value.replace(/#/, '') + dummyInputs.dummyFormat.value;
+
+    dummyImage.style.backgroundImage = myDummyImage + ")";
     
-    if (dummyInputs.dummyText.value == "") {
-        dummyImage.style.backgroundImage = "url" + "(" + "https://dummyimage.com/" + dummyInputs.dummyWidth.value + "x" + dummyInputs.dummyHeight.value + "/" + dummyInputs.dummyBgColor.value.replace(/#/, '') + "/" + dummyInputs.dummyTextColor.value.replace(/#/, '') + dummyInputs.dummyFormat.value + ")";
+    if (!dummyInputs.dummyText.value == "") {
+        dummyImage.style.backgroundImage = myDummyImage + "?text=" + dummyInputs.dummyText.value.replace(/ /g, '+') + ")";
     }
     
     // text field
