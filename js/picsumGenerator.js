@@ -14,31 +14,25 @@ let link = 'https://picsum.photos/';
 function generateImg() {
   let newImage = 'url(' + link + picsumInputs.picsumWidth.value + '/' + picsumInputs.picsumHeight.value + picsumInputs.picsumFormat.value;
 
-  // дужку додавай окремо, вона закінчує посилання, а після цього код не робить
   image.style.backgroundImage = newImage + ")";
   
   if (picsumInputs.picsumGrayscale.value == "Yes"){
     image.style.backgroundImage = newImage + '?grayscale' + ')'
-    // let imageGrayscale = newImage + '?grayscale)'
-    // newImage = imageGrayscale;
-    // console.log(imageGrayscale);
   } else if (picsumInputs.picsumBlur.value > 0) {
     image.style.backgroundImage = newImage + '?blur=' + picsumInputs.picsumBlur.value + ')'
-    // let imageBlur = newImage + `?blur=${picsumInputs.picsumBlur.value}`;
-    // newImage = imageBlur;
-    // console.log(imageBlur);
   }
 
-  // окремий іф, з елсом не працювало
   if (picsumInputs.picsumGrayscale.value == "Yes" && picsumInputs.picsumBlur.value > 0){
     image.style.backgroundImage = newImage + '?grayscale&blur=' + picsumInputs.picsumBlur.value + ')'
-    // let imageAll = newImage + '?grayscale&blur=' + picsumInputs.picsumBlur.value;
-    // console.log(imageAll);
   }
 
-  // не знаю, нахєра тобі стільки змінних
-
   console.log(image.style.backgroundImage);
+
+  // link field
+  let picsumLink = document.querySelector(".picsum-link");
+  let background = image.style.backgroundImage.slice(5, -2);
+  picsumLink.innerText = background;
+  console.log(picsumLink);
 }
 
 for (let picsumInput in picsumInputs) {
