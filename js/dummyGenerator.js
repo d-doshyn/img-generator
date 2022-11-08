@@ -27,7 +27,6 @@ function generateSrc() {
     // validation
     let dummyRegexp = /[a-zA-Z]+/g;
     if (dummyInputs.dummyWidth.value.match(dummyRegexp) || dummyInputs.dummyHeight.value.match(dummyRegexp)) {
-        let dummyTextField = document.querySelector(".dummy-text-block p");
         dummyTextField.innerText = "Width and height should be a number!";
     }
 }
