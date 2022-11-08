@@ -15,14 +15,14 @@ function generateImg() {
   let newImage = 'url(' + link + picsumInputs.picsumWidth.value + '/' + picsumInputs.picsumHeight.value + picsumInputs.picsumFormat.value;
 
   image.style.backgroundImage = newImage + ")";
-  
-  if (picsumInputs.picsumGrayscale.value == "Yes"){
+
+  if (picsumInputs.picsumGrayscale.value == "Yes") {
     image.style.backgroundImage = newImage + '?grayscale' + ')'
   } else if (picsumInputs.picsumBlur.value > 0) {
     image.style.backgroundImage = newImage + '?blur=' + picsumInputs.picsumBlur.value + ')'
   }
 
-  if (picsumInputs.picsumGrayscale.value == "Yes" && picsumInputs.picsumBlur.value > 0){
+  if (picsumInputs.picsumGrayscale.value == "Yes" && picsumInputs.picsumBlur.value > 0) {
     image.style.backgroundImage = newImage + '?grayscale&blur=' + picsumInputs.picsumBlur.value + ')'
   }
 
@@ -37,6 +37,6 @@ function generateImg() {
 
 for (let picsumInput in picsumInputs) {
   picsumInputs[picsumInput].oninput = () => {
-      generateImg();
+    generateImg();
   }
 }

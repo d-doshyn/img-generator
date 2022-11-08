@@ -67,7 +67,7 @@ body {
 }
 
 /* modal */
-.modal-donations{
+.modal-donations {
     position: fixed;
     top: 0;
     left: 0;
@@ -82,14 +82,14 @@ body {
     flex-direction: column;
 }
 
-.modal-donations-body{
+.modal-donations-body {
     background-color: #fff;
     z-index: 4;
     gap: 5px;
     padding: 10px;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     text-align: center;
     flex-direction: column;
 }
@@ -261,6 +261,36 @@ a .dark-text:hover {
     position: relative;
 }
 
+.copied-alert-container {
+    position: absolute;
+    right: 200px;
+    top: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #555;
+    color: white;
+    display: none;
+    transition: 0.3s;
+}
+
+.copied-alert-container-dummy {
+    position: absolute;
+    right: 200px;
+    top: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #555;
+    color: white;
+    display: none;
+    transition: 0.3s;
+}
+
+.flex-copied-alert-container {
+    display: flex;
+    right: 10px;
+    transition: 0.3s;
+}
+
 .fields {
     padding: 5px 10px;
     display: flex;
@@ -340,7 +370,7 @@ input.param-placeholder[type="text"] {
     display: none;
 }
 
-.param-text.color-param{
+.param-text.color-param {
     display: block;
 }
 
@@ -367,7 +397,7 @@ a.dark-text {
     color: #fff;
 }
 
-input[type="range"]{
+input[type="range"] {
     padding: 0 !important;
 }
 
@@ -376,10 +406,10 @@ input[type="range"]{
 }
 
 /* helper classes */
-.none{
+.none {
     display: none;
 }
 
-.flex{
+.flex {
     display: flex;
 }
