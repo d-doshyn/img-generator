@@ -269,7 +269,7 @@ a .dark-text:hover {
     border-radius: 5px;
     background-color: #555;
     color: white;
-    display: none;
+    opacity: 0;
     transition: 0.3s;
 }
 
@@ -281,12 +281,12 @@ a .dark-text:hover {
     border-radius: 5px;
     background-color: #555;
     color: white;
-    display: none;
+    opacity: 0;
     transition: 0.3s;
 }
 
 .flex-copied-alert-container {
-    display: flex;
+    opacity: 100%;
     right: 10px;
     transition: 0.3s;
 }
