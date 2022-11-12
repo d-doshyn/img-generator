@@ -135,6 +135,10 @@
         font-size: 80px;
     }
 
+    .card-subtitle{
+        font-size: 20px;
+    }
+
     /* footer */
 
     .footer__container {

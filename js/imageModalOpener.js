@@ -37,12 +37,3 @@ dummyOpener.onclick = () => {
 closeDummy.onclick = () => {
     appear(dummyModal, "none", "flex");
 }
-
-// donations
-donationsOpener.onclick = () => {
-    appear(donationsModal, "flex", "none");
-}
-
-closeDonations.onclick = () => {
-    appear(donationsModal, "none", "flex");
-}
