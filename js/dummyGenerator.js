@@ -14,11 +14,11 @@ function generateSrc() {
     let myDummyImage = "url" + "(" + "https://dummyimage.com/" + dummyInputs.dummyWidth.value + "x" + dummyInputs.dummyHeight.value + "/" + dummyInputs.dummyBgColor.value.replace(/#/, '') + "/" + dummyInputs.dummyTextColor.value.replace(/#/, '') + dummyInputs.dummyFormat.value;
 
     dummyImage.style.backgroundImage = myDummyImage + ")";
-    
+
     if (!dummyInputs.dummyText.value == "") {
         dummyImage.style.backgroundImage = myDummyImage + "?text=" + dummyInputs.dummyText.value.replace(/ /g, '+') + ")";
     }
-    
+
     // text field
     let dummyTextField = document.querySelector(".dummy-text-block p");
     let bg = dummyImage.style.backgroundImage.slice(5, -2);
@@ -29,6 +29,13 @@ function generateSrc() {
     if (dummyInputs.dummyWidth.value.match(dummyRegexp) || dummyInputs.dummyHeight.value.match(dummyRegexp)) {
         dummyTextField.innerText = "Width and height should be a number!";
     }
+
+}
+
+// saving
+let saveDummy = document.querySelector(".dummy-save");
+saveDummy.onclick = () => {
+    saveAs(dummyImage.style.backgroundImage.slice(5, -2), "DummyImage" + dummyInputs.dummyFormat.value)
 }
 
 // animated image
