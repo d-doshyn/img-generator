@@ -25,6 +25,7 @@
     <script src="js/dummyGenerator.js" defer></script>
     <script src="js/picsumGenerator.js" defer></script>
     <script src="js/copyLink.js" defer></script>
+    <script src="js/fileSaver.js" defer></script>
 
     <title>Random image generator by Lorem Picsum & DummyImage</title>
 </head>
@@ -94,13 +95,12 @@
                         <option value=".jpg">.jpg</option>
                         <option value=".webp">.webp</option>
                     </select>
-                    <button class="save-picture">Save</button>
                 </div>
             </div>
             <div class="image-modal lorem-picsum modal-block"
                 style="background-image: url(https://picsum.photos/200/300.jpg)"></div>
             <div class="link-to-copy modal-block">
-                <p class="picsum-link">https://picsum.photos/200/300</p>
+                <p class="picsum-link">https://picsum.photos/200/300.jpg</p>
                 <button class="copy-clipboard copyButton-picsum" title="Copy to clipboard">
                     <i class="fa-regular fa-copy"></i>
                 </button>
@@ -143,7 +143,7 @@
                         <option value=".png">.png</option>
                         <option value=".gif">.gif</option>
                     </select>
-                    <button class="save-picture">Save</button>
+                    <button class="save-picture dummy-save">Save</button>
                 </div>
             </div>
             <div class="image-modal dummy-image modal-block"
