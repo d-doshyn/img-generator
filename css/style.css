@@ -413,3 +413,19 @@ input[type="range"] {
 .flex {
     display: flex;
 }
+
+/* modal with like */
+.donations-like{
+    font-size: 80px;
+    color: rgb(197, 33, 33);
+}
+
+.donations-title{
+    font-size: 30px;
+}
+
+.donations-button{
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 50px
+}
