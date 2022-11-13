@@ -66,28 +66,27 @@ body {
     color: #555;
 }
 
-.card-subtitle{
+.card-subtitle {
     font-size: 13px;
     color: #555;
 }
 
-.photo-icon .fa-thumbs-up{
+.photo-icon .fa-thumbs-up {
     -webkit-text-stroke: #555 5px;
     color: transparent;
     transition: .5s;
 }
 
-.photo-icon .fa-thumbs-up.liked{
+.photo-icon .fa-thumbs-up.liked {
     animation: like 1s 1;
     color: #555;
     -webkit-text-stroke: unset;
 }
 
 @keyframes like {
-    50%{
-        transform: 
-            rotate(-45deg)
-            scale(0.9);
+    50% {
+        transform:
+            rotate(-45deg) scale(0.9);
     }
 }
 
@@ -428,6 +427,14 @@ input[type="range"] {
 
 .copy-clipboard:active {
     background-color: rgb(17, 17, 17);
+}
+
+.photo-icon .dark-like-btn {
+    -webkit-text-stroke: #fff 5px;
+}
+
+.photo-icon .fa-thumbs-up.liked-dark {
+    color: #fff;
 }
 
 /* helper classes */
