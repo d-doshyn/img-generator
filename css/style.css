@@ -252,7 +252,7 @@ a .dark-text:hover {
     background-color: #fff;
     z-index: 4;
     display: grid;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 1fr 1fr 0.5fr;
     gap: 5px;
     padding: 10px;
     border: #555 3px solid;
@@ -281,14 +281,18 @@ a .dark-text:hover {
 } */
 
 .link-to-copy {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9px;
+    text-align: center;
     position: relative;
 }
 
 .copied-alert-container {
     position: absolute;
     right: 200px;
-    top: 60px;
+    top: 30px;
     padding: 5px;
     border-radius: 5px;
     background-color: #555;
@@ -300,7 +304,7 @@ a .dark-text:hover {
 .copied-alert-container-dummy {
     position: absolute;
     right: 200px;
-    top: 60px;
+    top: 30px;
     padding: 5px;
     border-radius: 5px;
     background-color: #555;
@@ -319,10 +323,21 @@ a .dark-text:hover {
     padding: 5px 10px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    justify-content: start;
+    overflow-y: scroll;
     gap: 5px;
     position: relative;
+}
+
+.fields::-webkit-scrollbar{
+    background-color: transparent;
+    width: 5px;
+}
+
+.fields::-webkit-scrollbar-thumb{
+    background-color: #555;
+    border-radius: 5px;
 }
 
 .param-text {
@@ -352,9 +367,6 @@ input.param-placeholder[type="text"] {
     color: #fff;
     border: none;
     margin-top: 10px;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
     border-radius: 5px;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
@@ -371,11 +383,11 @@ input.param-placeholder[type="text"] {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
     background-color: #fff;
     transition: 0.3s;
     border-radius: 5px;
@@ -390,10 +402,6 @@ input.param-placeholder[type="text"] {
     border-color: #888;
 }
 
-.dummy-modal-container .param-text {
-    display: none;
-}
-
 .param-text.color-param {
     display: block;
 }
@@ -405,11 +413,13 @@ input.param-placeholder[type="text"] {
 
 .modal-closer {
     position: absolute;
-    font-size: 25px;
+    font-size: 40px;
+    z-index: 5;
     top: 0;
     right: 10px;
     color: #fff;
     cursor: pointer;
+    -webkit-text-stroke: 1px #555;
 }
 
 .DummyImage-link,

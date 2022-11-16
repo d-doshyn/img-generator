@@ -67,6 +67,8 @@
 
     .fields{
         grid-row-start: span 3;
+        gap: 20px;
+        padding: 20px 10px;
     }
 
     .link-to-copy{
@@ -76,6 +78,18 @@
         align-items: center;
         font-size: 13px;
         text-align: center;
+    }
+
+    .copy-clipboard {
+        top: 10px;
+        right: 10px;
+        height: 30px;
+        width: 30px;
+        font-size: 15px;
+    }
+
+    .copied-alert-container-dummy, .copied-alert-container{
+        top: 50px;
     }
 
     .param-placeholder{
@@ -190,8 +204,19 @@
         font-size: 25px;
     }
 
+    .copy-clipboard {
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+    }
+
+    .copied-alert-container-dummy, .copied-alert-container{
+        top: 60px;
+    }
+
     .fields{
-        padding: 10px 20px;
+        padding: 30px 20px;
+        gap: 60px;
     }
 
     .modal-closer{
