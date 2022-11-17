@@ -23,13 +23,6 @@ function generateSrc() {
     let dummyTextField = document.querySelector(".dummy-text-block p");
     let bg = dummyImage.style.backgroundImage.slice(5, -2);
     dummyTextField.innerText = bg;
-
-    // validation
-    let dummyRegexp = /[a-zA-Z]+/g;
-    if (dummyInputs.dummyWidth.value.match(dummyRegexp) || dummyInputs.dummyHeight.value.match(dummyRegexp)) {
-        dummyTextField.innerText = "Width and height should be a number!";
-    }
-
 }
 
 // saving

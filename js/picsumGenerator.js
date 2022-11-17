@@ -30,12 +30,6 @@ function generateImg() {
   let picsumLink = document.querySelector(".picsum-link");
   let background = image.style.backgroundImage.slice(5, -2);
   picsumLink.innerText = background;
-
-  // validation
-  let picsumRegexp = /[a-zA-Z]+/g;
-  if (picsumInputs.picsumWidth.value.match(picsumRegexp) || picsumInputs.picsumHeight.value.match(picsumRegexp)) {
-      picsumLink.innerText = "Width and height should be a number!";
-  }
 }
 
 for (let picsumInput in picsumInputs) {

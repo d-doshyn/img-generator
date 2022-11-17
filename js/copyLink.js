@@ -3,6 +3,7 @@ const delay = 1000;
 //Lorem picsum
 
 const copyButtonPicsum = document.querySelector('.copyButton-picsum')
+
 copyButtonPicsum.addEventListener("click", function () {
     const picsumLinkContent = document.querySelector('.picsum-link').textContent
     navigator.clipboard.writeText(picsumLinkContent)
