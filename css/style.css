@@ -422,6 +422,45 @@ input.param-placeholder[type="text"] {
     -webkit-text-stroke: 1px #555;
 }
 
+/* lorem picsum warning */
+.warning-block{
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.warning-text{
+    background-color: #fff;
+    font-size: 13px;
+    width: 250px;
+    padding: 10px;
+    border: #555 3px solid;
+    border-radius: 10px;
+}
+
+.warning-update{
+    background-color: red;
+    font-size: 9px;
+    color: #fff;
+    width: 60px;
+    height: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.warning-update:hover{
+    background-color: rgb(138, 0, 0);
+}
+
 .DummyImage-link,
 .LoremPicsum-link {
     text-decoration: underline;
@@ -454,4 +493,8 @@ input[type="range"] {
 
 .flex {
     display: flex;
+}
+
+.block{
+    display: block;
 }
